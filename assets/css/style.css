@@ -542,7 +542,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #f0d65b;
+  background: #c5bb19;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -600,7 +600,7 @@ h6 {
 * Mobile Navigation
 */
 .mobile-nav-toggle {
-  color: #EC85E3;
+  color: #c5bb19;
   font-size: 28px;
   cursor: pointer;
   display: none;

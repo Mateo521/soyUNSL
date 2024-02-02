@@ -1407,15 +1407,71 @@ max-height:85px;
 }
 
 .logos {
-  overflow: hidden;
-  white-space: nowrap;
+
+    height: 85px;
+    position: relative;
+    width: 100%;
+  
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  
 }
 
 
 #div1 {
-  display: inline-block;
-  animation: marquee 45s linear infinite;
-}
+
+    width: calc(150px * 20);
+    display: flex;
+    animation: scroll 35s linear infinite;
+    justify-content: space-between;
+  }
+
+  #div1 img {
+ 
+    height: 75px;
+  
+    display: grid;
+    place-items: center;
+    transition:0.5s;
+    cursor:pointer;
+  }
+  #div1 img:hover{
+    transform:scale(1.1)
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(calc(-150px * 10));
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #div1 {
+      width: calc(80px * 20);
+    }
+
+  
+    #div1 img {
+      width: 80px;
+    }
+  
+    @keyframes scroll {
+      0% {
+        transform: translateX(0px);
+      }
+      100% {
+        transform: translateX(calc(-80px * 10));
+      }
+    }
+
+    
+  }
+
+
 
 #div2 {
   display: inline-block;
